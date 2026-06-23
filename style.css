@@ -50,9 +50,14 @@ a {
 
 body {
     font-family: "Inter Variable", sans-serif;
-    background: white;
-    color: white;
+    background: #e7ddd1;
+    color:#e7ddd1
+   
 }
+
+
+
+
 
 
 
@@ -292,6 +297,8 @@ font-weight: 300;
     line-height: 1.7;
 }
 
+
+/* _____________________________ */
 /* projets */
 
 .project {
@@ -346,11 +353,65 @@ font-weight: 300;
     display: block;
 }
 
+
+
+/* grain images */
+
+.project-image,
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image::after,
+.hero::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image: url("./img/grain.png");
+    background-size: cover;
+    background-repeat: repeat;
+
+    opacity: 3;
+
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
 /* .project-image-first img {
     transform: scale(1.50);
 } */
 
 /* texte projets= */
+
+.project {
+    grid-template-columns:
+        80px
+        minmax(300px, 700px)
+        340px;
+}
+
+.project-info {
+    max-width: 340px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .project-info h3 {
     font-family: "Glodok Display", serif;
@@ -467,3 +528,16 @@ font-weight: 300;
     text-decoration: none;
     font-size: 0.9rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
