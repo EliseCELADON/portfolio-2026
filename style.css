@@ -245,9 +245,7 @@ font-weight: 300;
 
 
 
-/* ==========================
-   SECTION PROJETS
-========================== */
+/* section proj */
 
 .projects {
     background: #f3eee4;
@@ -260,9 +258,7 @@ font-weight: 300;
     padding-right: 6vw;
 }
 
-/* ==========================
-   HEADER
-========================== */
+/* header proj */
 
 .projects-top {
     display: flex;
@@ -296,9 +292,7 @@ font-weight: 300;
     line-height: 1.7;
 }
 
-/* ==========================
-   PROJET
-========================== */
+/* projets */
 
 .project {
     display: grid;
@@ -315,9 +309,7 @@ font-weight: 300;
     margin-bottom: 3rem;
 }
 
-/* ==========================
-   NUMERO
-========================== */
+/* projet num */
 
 .project-number span {
     display: block;
@@ -340,9 +332,7 @@ font-weight: 300;
     margin-top: 1rem;
 }
 
-/* ==========================
-   IMAGE
-========================== */
+/* img */
 
 .project-image {
     aspect-ratio: 16 / 9;
@@ -395,9 +385,7 @@ font-weight: 300;
     color: #c6d728;
 }
 
-/* ==========================
-   RESPONSIVE
-========================== */
+/* responsive */
 
 @media (max-width: 1100px) {
 
