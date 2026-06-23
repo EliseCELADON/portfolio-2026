@@ -3,3 +3,266 @@
 *::after {
   box-sizing: border-box;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+installation des polices de caractères */
+
+@font-face {
+  font-family: 'Glodok Display';
+  src: url('./fonts/tan-type-co-glodok-display.woff2') format('woff2'),
+       url('./fonts/tan-type-co-glodok-display.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  src: url('./fonts/Inter-VariableFont_opsz,wght.woff') format('woff');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  src: url('./fonts/Inter-Italic-VariableFont_opsz,wght.woff') format('woff');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+
+
+
+
+img {
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Inter Variable", sans-serif;
+    background: #000;
+    color: white;
+}
+
+
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 4rem;
+    z-index: 20;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo-circle {
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+}
+
+.logo-name {
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu a {
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: var(--accent);
+}
+
+/* page d'acceuil  */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10;
+}
+
+.intro {
+    color: var(--accent);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-title {
+    font-family: "Glodok Display", serif;
+    font-size: clamp(5rem, 12vw, 10rem);
+    line-height: 0.9;
+    text-align: center;
+    color: var(--accent);
+    z-index: 2;
+}
+
+.job {
+    margin-top: 1.5rem;
+
+    color: var(--accent);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.ellipse {
+    position: absolute;
+
+    width: min(900px, 80vw);
+    height: min(500px, 45vw);
+
+    border: 3px solid var(--accent);
+    border-radius: 50%;
+
+    z-index: 1;
+}
+
+
+/* =========================
+   FOOTER INFOS
+========================= */
+
+.photo-note {
+    position: absolute;
+    right: 4rem;
+    bottom: 4rem;
+
+    max-width: 260px;
+
+    text-align: right;
+    color: var(--accent);
+
+    font-size: 0.9rem;
+    z-index: 10;
+}
+
+.scroll {
+    position: absolute;
+    right: 3rem;
+    bottom: 1rem;
+
+    font-size: 4rem;
+    color: var(--accent);
+    z-index: 10;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 1.5rem;
+    }
+
+    .menu {
+        gap: 1rem;
+    }
+
+    .menu a {
+        font-size: 0.85rem;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+    }
+
+    .job {
+        font-size: 1.2rem;
+    }
+
+    .photo-note {
+        right: 1.5rem;
+        bottom: 5rem;
+        max-width: 180px;
+    }
+
+    .ellipse {
+        width: 90vw;
+        height: 50vw;
+          color: #c5d034; 
+
+    }
+}
+
+
+
+
+h1 {
+  font-family: 'Glodok Display', serif;
+  text-transform: uppercase;
+  color: #c5d034; 
+
+}
+
+
+
+
+P {
+  font-family: 'Inter Variable', sans-serif; 
+}
+
+
+
+
+
