@@ -16,3 +16,17 @@ fetch('en.json').then(function(response) {
 //bouton passage fr en 
 
 
+//animation buger menu
+
+
+const menuBtn = document.querySelector(".menu-btn");
+const menu = document.querySelector(".menu");
+
+menuBtn.addEventListener("click", () => {
+
+    menu.classList.toggle("active");
+    menuBtn.classList.toggle("active");
+
+});
+
+
