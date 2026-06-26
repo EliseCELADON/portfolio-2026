@@ -1,0 +1,652 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+installation des polices de caractères */
+
+@font-face {
+  font-family: 'Glodok Display';
+  src: url('./fonts/tan-type-co-glodok-display.woff2') format('woff2'),
+       url('./fonts/tan-type-co-glodok-display.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  src: url('./fonts/Inter-VariableFont_opsz,wght.woff') format('woff');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  src: url('./fonts/Inter-Italic-VariableFont_opsz,wght.woff') format('woff');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+
+
+
+
+img {
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Inter Variable", sans-serif;
+    background: #e7ddd1;
+    color:#e7ddd1
+   
+}
+
+
+
+
+
+
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 4rem;
+    z-index: 20;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo-circle {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #c5d034;
+    border-radius: 50%;
+}
+
+.logo-name {
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu a {
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #c5d034;
+}
+
+/* page d'acceuil  */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10;
+}
+
+.intro {
+    color: #c5d034;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.hero-title {
+    font-family: "Glodok Display", serif;
+    font-size: clamp(3.5rem, 12vw, 10rem);
+  
+    line-height: 0.9;
+    text-align: center;
+    color: #c5d034;
+    z-index: 2;
+}
+
+.job {
+    margin-top: 1.5rem;
+    color: #c5d034;
+    font-size: 2rem;
+    font-weight: 500;
+
+
+}
+
+.ellipse {
+    position: absolute;
+    width: min(900px, 80vw);
+    height: min(500px, 45vw);
+    border: 3px solid var(--accent);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+/* buger menu */
+
+
+/* burger menu bouton */
+
+.menu-btn {
+    display: none;
+
+    background: transparent;
+    border: none;
+
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+
+    position: relative;
+    z-index: 30;
+}
+
+.menu-btn span {
+    display: block;
+
+    width: 28px;
+    height: 2px;
+
+    margin: 6px auto;
+
+    background: white;
+    border-radius: 999px;
+
+    transition: all 0.3s ease;
+}
+
+/* animation croix */
+
+.menu-btn.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* version mobile  */
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 1.5rem;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+
+        top: 0;
+        right: -100%;
+
+        width: 100%;
+        height: 100vh;
+
+        background: #111;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 2rem;
+
+        transition: right 0.3s ease;
+
+        z-index: 25;
+    }
+
+    .menu.active {
+        right: 0;
+    }
+
+    .menu a {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/* légende photo */
+
+.photo-note {
+    position: absolute;
+  font-family: "Inter Variable", sans-serif;
+font-style: italic;
+font-weight: 300; 
+    right: 4rem;
+    bottom: 4rem;
+     max-width: 260px;
+    text-align: right;
+    color: #c5d034;
+
+    font-size: 0.7rem;
+    z-index: 10;
+}
+
+
+
+
+ /*  .ellipse {
+        width: 70vw;
+        height: 36vw;
+          color: #c5d034; 
+        border: 2px solid  #c5d034; 
+
+    } */
+
+/* responsive de l'acceuil */
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 1.5rem;
+    }
+
+    .menu {
+        gap: 1rem;
+    }
+
+    .menu a {
+        font-size: 0.85rem;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+    }
+
+    .job {
+        font-size: 1.2rem;
+    }
+
+    .photo-note {
+        right: 1.5rem;
+        bottom: 5rem;
+        max-width: 180px;
+    }
+
+    /* .ellipse {
+        width: 90vw;
+        height: 50vw;
+          color: #c5d034; 
+        border: 2px solid  #c5d034; 
+
+    } */
+}
+
+
+
+
+/* section proj */
+
+.projects {
+    background: #f3eee4;
+    color: #111;
+
+    padding-top: 9rem;
+    padding-bottom: 8rem;
+
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+
+/* header proj */
+
+.projects-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 5rem;
+}
+
+.projects-heading {
+    max-width: 700px;
+}
+
+.projects-subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 1rem;
+}
+
+.projects-title {
+    font-family: "Glodok Display", serif;
+    font-size: clamp(5rem, 10vw, 7rem);
+    line-height: 0.85;
+}
+
+.projects-text {
+    max-width: 280px;
+}
+
+.projects-text p {
+    line-height: 1.7;
+}
+
+
+/* _____________________________ */
+/* projets */
+
+.project {
+    display: grid;
+
+    grid-template-columns:
+        80px
+        minmax(300px, 700px)
+        260px;
+
+    gap: 3rem;
+
+    align-items: start;
+
+    margin-bottom: 3rem;
+}
+
+/* projet num */
+
+.project-number span {
+    display: block;
+
+    font-family: "Glodok Display", serif;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.project-number::after {
+    content: "";
+
+    display: block;
+
+    width: 45px;
+    height: 2px;
+
+    background: #c6d728;
+
+    margin-top: 1rem;
+}
+
+/* img */
+
+.project-image {
+    aspect-ratio: 16 / 8;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+/* grain images */
+
+/* .project-image,
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image::after,
+.hero::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image: url("./img/grain.png");
+    background-size: cover;
+    background-repeat: repeat;
+
+    opacity: 3;
+
+    pointer-events: none;
+} */
+
+
+
+
+
+
+
+
+/* .project-image-first img {
+    transform: scale(1.50);
+} */
+
+/* texte projets= */
+
+.project {
+    grid-template-columns:
+        80px
+        minmax(300px, 700px)
+        340px;
+}
+
+.project-info {
+    max-width: 340px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.project-info h3 {
+    font-family: "Glodok Display", serif;
+
+    font-size: 3rem;
+    line-height: 0.9;
+
+    margin-bottom: 1.5rem;
+}
+
+.project-info p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.project-year {
+    margin-bottom: 2rem;
+}
+
+.project-info a {
+    color: inherit;
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+}
+
+.project-info a::after {
+    content: " →";
+    color: #c6d728;
+}
+
+/* responsive */
+
+@media (max-width: 1100px) {
+
+    .project {
+        grid-template-columns:
+            70px
+            1fr;
+    }
+
+    .project-info {
+        grid-column: 2;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .projects {
+        padding: 5rem 1.5rem;
+    }
+
+    .projects-top {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .projects-title {
+        font-size: 4rem;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+
+        gap: 1.5rem;
+    }
+
+    .project-number span {
+        font-size: 2rem;
+    }
+
+    .project-info h3 {
+        font-size: 2rem;
+    }
+
+    .projects-text {
+        max-width: 100%;
+    }
+
+}
+
+
+
+
+/* Footer */
+
+.footer {
+    background:  #c6d728;
+
+    color: #111;
+
+    padding: 2rem 6vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

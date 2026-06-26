@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/projet2.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Bellifontain</title>
+
+    <link rel="stylesheet" href="./Bellifontain_files/styleproject2.css">
+    <link rel="stylesheet" href="./Bellifontain_files/style.css">
+    <script src="./Bellifontain_files/script.js" defer=""></script>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            <span class="logo-circle"></span>
+            <span class="logo-name">Elise CELADON</span>
+        </div>
+
+        <button class="menu-btn" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="menu">
+            <a href="http://127.0.0.1:5500/projet2.html#">Accueil</a>
+            <a href="http://127.0.0.1:5500/projet2.html#">À propos</a>
+            <a href="http://127.0.0.1:5500/projet2.html#">Projets</a>
+            <a href="http://127.0.0.1:5500/projet2.html#">Contact</a>
+        </nav>
+
+    </header>
+
+    <main class="project2-page">
+
+        <!-- HERO -->
+        <section class="project2-hero">
+
+            <a href="http://127.0.0.1:5500/index.html" class="project2-back">
+                ← RETOUR AUX PROJETS
+            </a>
+
+            <div class="project2-grid">
+
+                <div class="project2-content">
+
+                    <h2 class="project2-title">
+                        IDENTITÉ <br> VISUELLE <br> DE LA CCPN
+                    </h2>
+                     <p class="project2-subtitle">
+                       Création du logo et de la charte graphique de la communauté de communes du pays de Nemours
+                        <br>
+                    </p>
+
+                    <!-- Informations du projet -->
+                    <div class="project2-infos">
+
+                        <div class="info-item">
+                            <span class="info-label">ANNÉE</span>
+                            <p>2026</p>
+                        </div>
+
+                        
+
+                        <div class="info-item">
+                            <span class="info-label">RÔLE</span>
+                            <p>
+                               Graphiste<br>
+                           
+                            </p>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-label">LOGICIELS</span>
+                            <p>
+                                InDesign<br>
+                                Illustrator<br>
+                                Photoshop
+                            </p>
+                        
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-label">CONTEXTE</span>
+                            <p>Alternance à la mairie 
+                                <br>de Nemours</p>
+                        </div>
+
+                    </div>
+
+                   
+
+                    <p class="project2-description">
+                       Lors de mon alternance au sein de la mairie de Nemours j’ai pu mener le
+projet de la refonte du logo et de la charte graphique de la communauté
+de communes du pays de Nemours.
+En collaboration avec un autre alternant, nous avons entamé le processus
+par un brainstorming. L’idée maîtresse qui a émergé était celle de la
+graine qui germe. Cette métaphore incarnait non seulement le caractère
+rural du territoire, mais aussi son potentiel de croissance et d’innovation
+                    </p>
+
+                </div>
+
+                <div class="project2-cover">
+                    <img src="./Bellifontain_files/sac.png" alt="Couverture Bellifontain">
+                </div>
+
+            </div>
+
+        </section>
+
+   
+
+        <!-- Projet suivant -->
+        <section class="project2-next">
+
+            <div class="project2-next-content">
+
+                <p>PROJET SUIVANT</p>
+
+                <h2>
+                    DOCU <br>EN CORÉE <br>DU SUD
+                    
+                </h2>
+
+                <span>→</span>
+
+            </div>
+
+            <div class="project2-next-image">
+
+                <img src="./Bellifontain_files/docu_payage.png" alt="Projet suivant">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Elise Céladon. Tous droits réservés.
+        </p>
+
+        <div class="footer-links">
+            <a href="http://127.0.0.1:5500/projet2.html#">Mentions légales</a>
+            <a href="mailto:contact@email.fr">Contact</a>
+        </div>
+
+    </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
