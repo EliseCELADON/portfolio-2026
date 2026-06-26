@@ -1,0 +1,384 @@
+body {
+    font-family: "Inter Variable", sans-serif;
+    background: #e7ddd1;
+    color: black !important;
+}
+
+.project2-page {
+    background: #f3eee4;
+    color: #111;
+    overflow-x: clip;
+}
+
+/* HERO */
+
+.project2-hero {
+    padding: 8rem 6vw 5rem;
+    margin-bottom: 6rem;
+}
+
+.project2-grid {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.project2-content {
+    position: relative;
+    z-index: 10;
+    flex: 0 0 45%;
+}
+
+.project2-number {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.project2-title {
+    font-family: "Glodok Display", serif;
+    font-size: clamp(5rem, 9vw, 10rem);
+    line-height: .9;
+    white-space: nowrap;
+    width: max-content;
+    margin-top: 4rem;
+}
+
+.project2-subtitle {
+    font-size: 1.2rem;
+    max-width: 650px;
+    margin-bottom: 3rem;
+}
+
+.project2-description {
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+/* IMAGE PRINCIPALE */
+
+
+.project2-cover {
+    position: absolute;
+    right: -55vw;
+    top: -16%;
+    transform: translateY(-50%) scale(1.4);
+    z-index: 1;
+    pointer-events: none;
+    scale: 0.5;
+}
+
+.project2-cover img {
+    width: 120%;
+    height: auto;
+    display: block;
+}
+
+/* IMAGE LARGE */
+
+.project2-image-large {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 6rem;
+}
+
+.project2-image-large img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+}
+
+/* INFORMATIONS */
+
+.project2-infos {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    gap: 4rem;
+    margin: 6rem 0;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.info-label {
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.info-item p {
+    font-size: .95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* SECTION DIRECTION ARTISTIQUE */
+
+.project2-section {
+    padding: 0 6vw 6rem;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 4rem;
+}
+
+.project2-text h2 {
+    font-size: .85rem;
+    letter-spacing: .05em;
+    margin-bottom: 1rem;
+}
+
+.project2-text p {
+    line-height: 1.8;
+}
+
+.project2-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.project2-images img {
+    width: 100%;
+    aspect-ratio: 1.3 / 1.3;
+    object-fit: cover;
+}
+
+/* PROJET SUIVANT */
+
+.project2-next {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project2-next-content {
+    background: #c6d728;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project2-next-content p {
+    font-size: .8rem;
+    margin-bottom: 2rem;
+}
+
+.project2-next-content h2 {
+    font-family: "Glodok Display", serif;
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: .9;
+}
+
+.project2-next-content span {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.project2-next-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #e7ddd1 !important;
+    color: #111;
+    padding: 2rem 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+/* TABLETTE */
+ 
+
+@media (max-width: 992px) {
+
+    .project2-hero {
+        padding: 7rem 6vw 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .project2-grid {
+        display: block;
+    }
+
+    .project2-content {
+        width: 100%;
+        max-width: 100%;
+        z-index: 2;
+    }
+
+    .project2-title {
+        font-size: clamp(4rem, 8vw, 6rem);
+        width: auto;
+        white-space: normal;
+        margin-top: 2rem;
+    }
+
+    .project2-subtitle {
+        font-size: 1.05rem;
+        max-width: 500px;
+        margin-bottom: 2rem;
+    }
+
+    .project2-description {
+        max-width: 100%;
+    }
+
+    .project2-infos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin: 3rem 0;
+    }
+
+    .project2-cover {
+        position: absolute;
+        right: -12%;
+        top: -20px;
+        width: 55%;
+        transform: none;
+        opacity: .25;
+        z-index: 0;
+    }
+
+    .project2-cover img {
+        width: 100%;
+    }
+
+    .project2-section {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .project2-images {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .project2-next {
+        grid-template-columns: 1fr;
+    }
+
+    .project2-next-image {
+        height: 350px;
+    }
+}
+
+
+/* MOBILE */
+
+
+@media (max-width: 768px) {
+
+    .project2-hero {
+        padding: 6rem 6vw 3rem;
+    }
+
+    .project2-title {
+        font-size: 3.2rem;
+        line-height: .95;
+        margin-top: 1.5rem;
+    }
+
+    .project2-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .project2-description {
+        font-size: .95rem;
+        line-height: 1.7;
+    }
+
+    .project2-infos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin: 2.5rem 0;
+    }
+
+    .info-label {
+        font-size: .65rem;
+    }
+
+    .info-item p {
+        font-size: .9rem;
+    }
+
+    .project2-cover {
+        display: none;
+    }
+
+    .project2-image-large {
+        margin-bottom: 4rem;
+    }
+
+    .project2-section {
+        gap: 2rem;
+    }
+
+    .project2-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project2-images img {
+        aspect-ratio: 1 / 1;
+    }
+
+    .project2-next-content {
+        padding: 3rem 2rem;
+    }
+
+    .project2-next-content h2 {
+        font-size: 2.3rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+
+    .project2-hero {
+        padding: 5.5rem 5vw 3rem;
+    }
+
+    .project2-title {
+        font-size: 2.7rem;
+    }
+
+    .project2-subtitle {
+        font-size: .95rem;
+    }
+
+    .project2-description {
+        font-size: .9rem;
+    }
+
+    .project2-infos {
+        gap: 1rem;
+    }
+
+    .project2-next-content {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .project2-next-content h2 {
+        font-size: 2rem;
+    }
+}
