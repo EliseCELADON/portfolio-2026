@@ -1,0 +1,100 @@
+/* ── BODY ── */
+
+.mentions-body {
+    background: #e7ddd1;
+    color: #111;
+}
+
+/* ── HEADER EN NOIR ── */
+
+.header--dark {
+    position: fixed;
+    background: #e7ddd1;
+}
+
+.header--dark .logo-name {
+    color: #111;
+}
+
+.logo-circle--dark {
+    border-color: #111 !important;
+}
+
+.menu--dark a {
+    color: #111;
+}
+
+.menu--dark a:hover {
+    color: #c5d034;
+}
+
+/* burger spans en noir */
+.menu-btn--dark span {
+    background: #111;
+}
+
+/* ── PAGE CONTENU ── */
+
+.mentions-page {
+    padding: 10rem 6vw 8rem;
+    max-width: 800px;
+}
+
+.mentions-label {
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.mentions-title {
+    font-family: "Glodok Display", serif;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: .9;
+    margin: 0 0 5rem;
+    color: #111;
+}
+
+/* ── SECTIONS ── */
+
+.mentions-section {
+    margin-bottom: 3.5rem;
+}
+
+.mentions-section h2 {
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #666;
+    margin: 0 0 1rem;
+}
+
+.mentions-section p {
+    font-size: .95rem;
+    line-height: 1.8;
+    color: #111;
+    margin: 0 0 .5rem;
+}
+
+.mentions-section a {
+    color: #111;
+    text-decoration: underline;
+}
+
+.mentions-divider {
+    border: none;
+    border-top: 1px solid #ccc4b8;
+    margin: 0 0 3.5rem;
+}
+
+/* ── RESPONSIVE ── */
+
+@media (max-width: 768px) {
+
+    .mentions-page {
+        padding: 8rem 6vw 6rem;
+    }
+}
