@@ -428,3 +428,13 @@ body {
 
 
 
+.project1-next-link {
+    display: flex;         
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+}
+.project1-next-link {
+    display: contents;
+}
