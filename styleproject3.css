@@ -432,3 +432,9 @@ body {
 .project3-next-link {
     display: contents;
 }
+
+
+.header-apropos {
+    position: fixed;
+    background: #f3eee4;
+}
