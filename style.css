@@ -291,9 +291,21 @@ body {
 
     .menu a {
         font-size: 1.5rem;
-          color: #f3eee4;
+         color: #fff !important;
+
+    }
+
+    .menu-btn span {
+        background: #fff !important;
+    }
+
+    /* croix aussi en blanc */
+    .menu-btn.active span {
+        background: #fff !important;
     }
 }
+
+
 
 
 
