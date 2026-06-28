@@ -58,6 +58,12 @@ body {
 
 
 
+
+.header.scrolled {
+    background: #f3eee4;
+}
+
+
 .header {
     position: fixed;
     top: 0;
@@ -71,8 +77,15 @@ body {
     transition: background 0.3s ease;
 }
 
-.header.scrolled {
-    background: #f3eee4;
+
+
+body.home .menu-btn span {
+    background: #fff;
+    transition: background 0.3s ease;
+}
+
+body.home .header.scrolled .menu-btn span {
+    background: #111;
 }
 
 
@@ -85,16 +98,12 @@ body {
 .header.scrolled .logo-name,
 .header.scrolled .menu a {
     color: #111;
-  
 }
 
 .header .menu a:hover,
 .header.scrolled .menu a:hover {
     color: #c5d034;
 }
-
-
-
 
 .logo {
     display: flex;
@@ -289,15 +298,15 @@ body {
         right: 0;
     }
 
-    .menu a {
+
+
+ .menu a {
         font-size: 1.5rem;
          color: #fff !important;
 
     }
 
-    .menu-btn span {
-        background: #fff !important;
-    }
+   
 
     /* croix aussi en blanc */
     .menu-btn.active span {
@@ -351,7 +360,6 @@ font-weight: 300;
 
     .menu a {
         font-size: 0.85rem;
-        color: #f3eee4;
     }
 
     .intro {
@@ -483,10 +491,6 @@ font-weight: 300;
     display: block;
 }
 
-/* burger spans noirs au scroll */
-.header.scrolled .menu-btn span {
-    background: #111;
-}
 
 
 /* grain images */
