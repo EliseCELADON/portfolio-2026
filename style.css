@@ -291,6 +291,7 @@ body {
 
     .menu a {
         font-size: 1.5rem;
+          color: #f3eee4;
     }
 }
 
@@ -338,6 +339,7 @@ font-weight: 300;
 
     .menu a {
         font-size: 0.85rem;
+        color: #f3eee4;
     }
 
     .intro {
@@ -469,6 +471,10 @@ font-weight: 300;
     display: block;
 }
 
+/* burger spans noirs au scroll */
+.header.scrolled .menu-btn span {
+    background: #111;
+}
 
 
 /* grain images */
