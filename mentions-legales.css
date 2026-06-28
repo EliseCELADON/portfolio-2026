@@ -1,36 +1,8 @@
 /* ── BODY ── */
 
 .mentions-body {
-    background: #e7ddd1;
+    background: #f3eee4;
     color: #111;
-}
-
-/* ── HEADER EN NOIR ── */
-
-.header--dark {
-    position: fixed;
-    background: #e7ddd1;
-}
-
-.header--dark .logo-name {
-    color: #111;
-}
-
-.logo-circle--dark {
-    border-color: #111 !important;
-}
-
-.menu--dark a {
-    color: #111;
-}
-
-.menu--dark a:hover {
-    color: #c5d034;
-}
-
-/* burger spans en noir */
-.menu-btn--dark span {
-    background: #111;
 }
 
 /* ── PAGE CONTENU ── */
@@ -38,15 +10,6 @@
 .mentions-page {
     padding: 10rem 6vw 8rem;
     max-width: 800px;
-}
-
-.mentions-label {
-    font-size: .7rem;
-    font-weight: 600;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: #666;
-    margin-bottom: 2rem;
 }
 
 .mentions-title {

@@ -30,3 +30,14 @@ menuBtn.addEventListener("click", () => {
 });
 
 
+// ajout bb et changement de couleur menu pag d'acceuil
+
+window.addEventListener('scroll', () => {
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+

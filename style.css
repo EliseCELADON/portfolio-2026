@@ -58,22 +58,43 @@ body {
 
 
 
-
-
-
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 2rem 4rem;
     z-index: 20;
+    transition: background 0.3s ease;
 }
+
+.header.scrolled {
+    background: #f3eee4;
+}
+
+
+.header .logo-name,
+.header .menu a {
+    color: #e7ddd1;
+    transition: color 0.3s ease;
+}
+
+.header.scrolled .logo-name,
+.header.scrolled .menu a {
+    color: #111;
+  
+}
+
+.header .menu a:hover,
+.header.scrolled .menu a:hover {
+    color: #c5d034;
+}
+
+
+
 
 .logo {
     display: flex;
