@@ -30,7 +30,7 @@ menuBtn.addEventListener("click", () => {
 });
 
 
-// ajout bb et changement de couleur menu pag d'acceuil
+// ajout bg et changement de couleur menu page d'acceuil
 
 window.addEventListener('scroll', () => {
     const header = document.getElementById('header');
